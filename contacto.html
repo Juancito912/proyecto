@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Kelly's Cake</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Padauk:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body class="flex-container--contacto">
+    <header>
+        <div  class="header-container">
+            <div class="header-titulo centrado">
+                <h1> Kelly's Cake </h1>
+                <h2> Confiteria y Panaderia</h2>
+            </div>
+
+            <nav class="header-banner derecha">
+                <ul class="header-banner__encabezado centrado">
+                    <li><a href="index.html">Home </a></li>
+                    <li><a href="staff.html"> Staff </a></li>
+                    <li><a href="confiteria.html"> Confiteria </a></li>
+                    <li><a href="panaderia.html"> Panaderia </a></li>
+                    <li><a href="contacto.html" id="pestaña-activa"> Contacto </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <form class="consultas" action="#">
+        <fieldset class="consultas-form">
+            <div class="consultas-form__titulo centrado">
+                <h2> Consultanos</h2>
+                <p> - Dejanos tus consultas y sugerencias -</p>
+                <p> Nos pondremos en contacto contigo a la brevedad!</p>
+            </div>
+
+            <div class="consultas-form__cuerpo">
+                <div class="nombre consultas-form__cuerpo--div">
+                    <label  for="name"> Nombres:</label>
+                    <input class="consultas-form__cuerpo--input" type="text" id="name" name="name" placeholder="Ingrese sus nombres" required>
+                </div>
+
+                <div class="apellido consultas-form__cuerpo--div">
+                    <label for="apellido"> Apellidos: </label>
+                    <input class="consultas-form__cuerpo--input"  type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos" required>
+                </div>
+
+                <div class="correo consultas-form__cuerpo--div"> 
+                    <label for="mail"> Correo: </label>
+                    <input class="consultas-form__cuerpo--input" type="text" id="mail" name="mail">
+                </div>
+
+                <div class="telefono consultas-form__cuerpo--div">
+                    <label for="telefono"> Telefono: </label>
+                    <input class="consultas-form__cuerpo--input telefono" type="text" id="telefono" name="telefono">
+                </div>
+
+                <div class="mensaje consultas-form__cuerpo--div">
+                    <label  for="mensaje"> Mensaje:</label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" maxlength="300" placeholder="Comentarios"></textarea>
+                </div>
+
+                <div class="newsletter consultas-form__cuerpo--div">
+                    <label  for="newsletter"> ¿Desea recibir el Newsletter?</label>
+                    <label for="siNewsletter"> Si</label>
+                    <input type="radio" id="siNewsletter" name="newsletter" value="1" checked>
+                    <label for="noNewsletter"> No</label>
+                    <input type="radio" id="noNewsletter" name="newsletter" value="0">
+                </div>
+
+                <input class="boton" type="submit" value="Enviar">
+
+            </div>
+        </fieldset>
+    </form>
+    <section class="separador centrado">
+        <h3 class="mayuscula"> Visitanos</h3>
+        <p class="bordo cursiva"> - Nuestra Ubicación -</p>
+    </section>
+    <!-- mapa -->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.9774127716523!2d-58.37310098551011!3d-34.60473266505737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450cf539e28f6b%3A0x8c530b121fdd8f66!2s25%20de%20Mayo%20267%2C%20C1002%20ABE%2C%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1633187130187!5m2!1ses!2sar" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>    
+
+    <footer class="footer">
+        <div class="footer-descripcion izquierda">
+            <img class="footer-descripcion__foto" src="img/logo2.jpg" alt="logo2">
+
+            <p> 
+                Queremos, a traves de nuestros productos y nuestra dedicada
+                atención, estar presentes en esos momentos de felicidad y placer que son parte de tu vida.
+            </p>
+        </div>
+
+        <div class="footer-datos">
+            <ul class="footer-datos__lista">
+                <li > <i class="fas fa-home"></i> 
+                    <span> 25 de mayo 267 Piso 9</span> 
+                </li>
+                <li > <i class="fas fa-phone"></i>
+                    <span> +54 11 57260960</span>
+                </li>
+                <li > <i class="fas fa-envelope"></i>
+                    <span> stefano.2000@hotmail.es</span> 
+                </li>
+                <li > <i class="far fa-clock"></i>
+                    <span>  Martes a Sabados: 7AM - 21PM </span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-enlaces centrado derecha">
+            <ul class="footer-enlaces__lista">
+                <li><a href="staff.html"> Sobre Nosotros </a></li>
+                <li><a href="confiteria.html"> Confiteria </a></li>
+                <li><a href="panaderia.html"> Panaderia </a></li>
+                <li><a href="contacto.html"> Contacto </a></li>
+            </ul>
+
+            <ul class="footer-enlaces__redes">
+                <li> 
+                    <a href="https://www.facebook.com/"><i class="fab fa-facebook icon azul"> </i> </a>
+                </li>
+                <li> 
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram icon violeta"> </i> </a>
+                </li>
+                <li> 
+                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp icon verde"></i> </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
