@@ -11,7 +11,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .texto-p {
@@ -40,12 +40,9 @@ a{
 .foto {
     width: 50%;
     height: 100%;
-    transition: 1s;
 }
 
-.foto:hover{
-    transform:scale(1.1,1.1);
-}
+
 
 .derecha {
     float: right;
@@ -208,32 +205,10 @@ header {
     font-family: 'Padauk', sans-serif;
     justify-content:space-evenly;
     grid-area: footer;
-    animation-name: animacion;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+    background-color: #111;
+    color: white;
 }
 
-@keyframes animacion{
-
-    0%{
-        background-color: #111;
-        color: white;
-    }
-    25%{
-        background-color: rgb(44, 44, 44);
-        color: rgb(172, 172, 172);
-    }
-    60%{
-        background-color:rgb(173, 173, 173);
-        color: rgb(65, 64, 64);
-    }
-    100%{
-        background-color: rgb(255, 255, 255);
-        color: rgb(0, 0, 0);
-    }
-    
-}
 .footer-descripcion {
     width: 50%;
     margin: 1rem 0rem 0rem 1rem;
