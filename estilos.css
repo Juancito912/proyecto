@@ -13,7 +13,9 @@ a{
     text-decoration: none;
     color: white;
 }
-
+a:hover {
+    text-decoration: none;
+}
 .texto-p {
     font-size: 1.5rem;
     font-style:normal;
@@ -35,6 +37,7 @@ a{
     font-size: 2rem;
     letter-spacing: 0.2rem;
     line-height: 3.5rem;
+    font-weight: 700;
 }
 
 .foto {
@@ -42,8 +45,9 @@ a{
     height: 100%;
 }
 
-
-
+.foto_carousel {
+    width: 100%;
+}
 .derecha {
     float: right;
 }
@@ -76,6 +80,11 @@ a{
 .cursiva {
     font-family: 'Ephesis', cursive;
 }
+
+.fuente_principal {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .mayuscula {
     text-transform: uppercase;
 }
@@ -135,7 +144,7 @@ header {
 }
 .header-banner__encabezado a:hover {
     color: #000000;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #fondito {
@@ -347,15 +356,9 @@ header {
 }
 
 .boton {
-    background-color: whitesmoke;
-    margin: 2vh;
-    font-size: 1.5rem;
-    width: 25%;
-    border-radius: 0.4rem;
-    cursor: pointer;
-    padding: 0.5rem;
-    grid-area: boton;
-
+    font-size: 2rem;
+    width: 10rem;
+    
 }
 
 /* --PESTAÑA SOBRE NOSOTROS-- */
