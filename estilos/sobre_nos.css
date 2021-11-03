@@ -1,0 +1,90 @@
+/* Container de la pestaña */
+.container-grid {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "nosotros artesanales"
+    "separador separador"
+    "personal personal"
+    "footer footer";
+    grid-template-columns: 50% auto;
+    grid-template-rows: 12vh 88vh auto 70vh auto;
+}
+
+/* Clases generales de la pestaña */
+
+.imagen {
+    width: 100%;
+    height: 50vh;
+}
+.nosotros{
+    grid-area: nosotros;
+}
+
+.artesanales {
+    grid-area: artesanales;
+}
+.nosotros-titulo , .artesanales-titulo{
+    padding: 1.5rem 1rem 1.5rem 1rem;
+    height: 38vh;
+}
+
+.titulos-h3 {
+    letter-spacing: 0.2rem;
+    font-size: 2.5vh;
+    padding-bottom: 1vh;
+    font-weight: 600;
+}
+
+.descripciones {
+    font-size: 1.25rem;
+    font-weight: 400;
+    font-style: normal;
+    text-align: left;
+}
+
+.nosotros h2, .artesanales h2 {
+    font-weight: 600;
+    letter-spacing: 0.3rem;
+    font-size: 2rem;
+}
+
+/* --STAFF-- */
+
+.staff {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    grid-area: personal;
+    display: grid;
+    grid-template-areas:
+    "uno dos tres";
+}
+
+.persona-uno {
+    grid-area: uno;
+}
+.persona-dos{
+    grid-area: dos;
+}
+.persona-tres {
+    grid-area: tres;
+}
+
+.staff-titulos {
+    height: 20vh;
+    padding: 1rem;
+}
+
+.staff-titulos h3 {
+    font-size: 2rem;
+    padding: 2vh;
+}
+
+.staff-titulos p {
+    font-size: 1.2rem;
+}
+
+.staff-fotos {
+    width: 100%;
+    height: 50vh;
+}
