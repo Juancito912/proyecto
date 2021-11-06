@@ -33,17 +33,15 @@
 }
 .consultas-form{
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .consultas-form__cuerpo {
-    line-height: 5vh;
-    display: grid;
-    grid-template-areas: 
-    "nombre apellido"
-    "telefono correo"
-    "mensaje letter"
-    "mensaje boton";
+    line-height: 4vh;
+    display: flex;
+    flex-direction: column;
+    padding-right: 18rem;
+    padding-left: 18rem;
 }
 
 .consultas-form__cuerpo--div{
@@ -52,10 +50,12 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: baseline;
+    margin: 0px;
+    align-items: center;
 }
 
 .consultas-form__cuerpo--div label {
-    padding-right: 1rem; padding-left: 1rem;
+    padding-right: 1rem;
     font-size: 1.5rem;
 }
 
@@ -65,27 +65,8 @@
     font-size: 1rem;
     border: none;
     width: 100%;
-    margin-bottom: 1.5vh;
 }
 
-.nombre {
-    grid-area: nombre;
-}
-.apellido {
-    grid-area: apellido;
-}
-.correo {
-    grid-area: correo;
-}
-.telefono {
-    grid-area: telefono;
-}
-.mensaje {
-    grid-area: mensaje;
-}
-.newsletter {
-    grid-area: letter;
-}
 .boton {
     font-size: 2rem;
     width: 10rem;
