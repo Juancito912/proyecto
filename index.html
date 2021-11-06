@@ -35,6 +35,7 @@
 
             <!-- Barra de navegacion -->
             <nav class="header-banner">
+                
                 <ul class="header-banner__encabezado centrado">
                     <li><a href="index.html" id="pestaña-activa">Home </a></li>
                     <li><a href="staff.html"> Sobre Nosotros </a></li>
@@ -67,7 +68,13 @@
                 <p class="texto-p"> Panes de todo tipo de harinas mezcladas con semillas y otros ingredientes.</p>
             </div>
 
-            <img class="foto derecha" src="img/panes.jpg" alt="panaderia">
+            <img id="foto" class="derecha" src="img/panes.jpg" alt="Panaderia">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+            </div>
         </section>
 
         <section class="confiteria centrado">
@@ -76,7 +83,13 @@
                 <p class="texto-p"> Gran variedad de facturas y bombones</p>
             </div>
 
-            <img class="foto izquierda" src="img/facturas.jpg" alt="facturas">
+            <img id="foto" class="izquierda" src="img/facturas.jpg" alt="Facturas">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img02">
+                <div id="caption"></div>
+            </div>
         </section>
 
         <section class="pasteleria fondo-naranja centrado">
@@ -85,7 +98,13 @@
                 <p class="texto-p"> Postres, tortas, masas finas, budines y mini-postres</p>
             </div>
             
-            <img class="foto derecha" src="img/pastelería2.jpg" alt="Pasteleria">
+            <img id="foto" class="derecha" src="img/pastelería2.jpg" alt="Pasteleria">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img03">
+                <div id="caption"></div>
+            </div>
         </section>
     </div>
 
@@ -145,6 +164,27 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById("foto");
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() { 
+          modal.style.display = "none";
+        }
+    </script>
 </body>
 
 </html>

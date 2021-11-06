@@ -43,6 +43,9 @@ a:hover {
     font-size: 1.8rem;
 }
 
+.icon-reorder{
+    color: gray;
+}
 .violeta {
     color: #833AB4;
 }
@@ -90,10 +93,60 @@ a:hover {
 }
 
 /*-------HEADER------ */
+@media (min-width: 1200px) {
+
+    .header-container{
+        width: 100%;
+        height: 12vh;
+        background-color:#6d0e16;
+        position: sticky;
+        top:0rem;
+        display: flex;
+        align-items: center;
+        grid-area: header;
+    }
+    
+    .header-titulo{
+        color: white;
+        width: 30%;
+        text-transform: none;
+    }   
+    
+    .header-titulo h1{
+        font-size: 1.6rem;
+        font-weight: 300;
+    }
+    
+    .header-titulo h2 {
+        font-size: 1.3rem;
+        font-weight: 300;
+    }
+    
+    .header-banner{
+        width: 70%;
+    }
+    .header-banner__encabezado li {
+        display: inline-block;
+        padding: 1rem;
+    }
+    .header-banner__encabezado {
+        margin: 0;
+    }
+    .header-banner__encabezado a {
+        text-align: center;
+        color:rgb(255, 255, 255);
+        padding: 0.9rem;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+    }
+    .header-banner__encabezado a:hover {
+        color: #000000;
+        font-weight: 500;
+    }
+}
 
 .header-container{
     width: 100%;
-    height: 12vh;
     background-color:#6d0e16;
     position: sticky;
     top:0rem;
