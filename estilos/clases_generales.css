@@ -148,7 +148,7 @@ a:hover {
     clear: both;
     font-size: 1rem;
     margin-top: 0.2vh;
-    padding: 2vh 1.5rem 2vh 1.5rem;
+    padding: 2vh 1rem 2vh 1rem;
     font-family: 'Times New Roman', Times, serif;
     justify-content:space-evenly;
     grid-area: footer;
@@ -159,22 +159,24 @@ a:hover {
 
 .footer-descripcion {
     width: 35%;
-    margin: 1rem 0rem 0rem 1rem;
+    margin-top: 1rem;
     order:1;
 }
+
 .footer-descripcion__foto {
     width: 70%;
     height:20vh;
 }
+
 .footer-descripcion p{
-    padding-top: 0.5rem;
+    padding-top: 2vh;
     text-align: left;
     font-size: 0.9rem;
     width: 70%;
 }
 
 .footer-datos {
-    width: 45%;
+    width: 35%;
     order: 2;
 }
 
@@ -191,10 +193,10 @@ a:hover {
 }
 
 .footer-enlaces__lista {
-    line-height: 3rem;
+    line-height: 6vh;
 }
 .footer-enlaces__redes{
-    margin-top: 1vh;
+    margin-top: 5vh;
 }
 .footer-enlaces__redes li {
     display: inline-block;
