@@ -1,13 +1,7 @@
 /* Container de la pestaña */
-.container-grid {
-    display: grid;
-    grid-template-areas: 
-    "header header"
-    "nosotros artesanales"
-    "separador separador"
-    "personal personal"
-    "footer footer";
-    grid-template-rows: 12vh 128vh auto;
+.container-pestaña {
+    display: flex;
+    flex-direction: column;
 }
 
 /* Clases generales de la pestaña */
@@ -16,16 +10,10 @@
     width: 100%;
     height: 80vh;
 }
-.nosotros{
-    grid-area: nosotros;
-}
 
-.artesanales {
-    grid-area: artesanales;
-}
 .nosotros-titulo , .artesanales-titulo{
     padding: 1.5rem 1rem 1.5rem 1rem;
-    height: 48vh;
+    height: auto;
 }
 
 .titulos-h3 {
@@ -48,15 +36,38 @@
     font-size: 2rem;
 }
 
+@media (min-width:728px) {
+    .container-pestaña {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "nosotros artesanales"
+        "separador separador"
+        "personal personal"
+        "footer footer";
+        grid-template-rows: 12vh 128vh auto;
+    }
+    .nosotros{
+        grid-area: nosotros;
+    }
+    
+    .artesanales {
+        grid-area: artesanales;
+    }
+}
+
 /* --STAFF-- */
 
 .staff {
     background-color: rgb(24, 24, 24);
     color: white;
     grid-area: personal;
+    display: flex;
+    flex-direction: column;
 }
+
 .persona {
-    width: 33.333333334%;
+    width: 100%;
 }
 
 .staff-titulos {
@@ -76,4 +87,16 @@
 .staff-fotos {
     width: 100%;
     height: 60vh;
+}
+
+@media (min-width:728px) {
+    .staff {
+        background-color: rgb(24, 24, 24);
+        color: white;
+        grid-area: personal;
+    }
+    .persona {
+        width: 33.333333334%;
+    }
+    
 }

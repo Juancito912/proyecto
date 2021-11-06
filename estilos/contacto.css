@@ -40,16 +40,11 @@
     line-height: 4vh;
     display: flex;
     flex-direction: column;
-    padding-right: 18rem;
-    padding-left: 18rem;
+    align-items: center;
 }
 
 .consultas-form__cuerpo--div{
     font-size: 1.6rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
     margin: 0px;
     align-items: center;
 }
@@ -64,7 +59,8 @@
     color: rgb(83, 80, 80);
     font-size: 1rem;
     border: none;
-    width: 100%;
+    width: 60%;
+    margin-bottom: 1vh;
 }
 
 .boton {

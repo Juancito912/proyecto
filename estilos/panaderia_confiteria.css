@@ -2,8 +2,9 @@
 .grids-secction {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
+
 .foto-container{
     position: relative;
 }
@@ -14,6 +15,22 @@
     height: 45vh;
 }
 
+@media (min-width:728px) {
+    .grids-secction {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    /* .foto-container{
+        position: relative;
+    } */
+    
+    .fotos-secctions {
+        display: block;
+        width: 100%;
+        height: 45vh;
+    }
+}
 .overlay {
     position: absolute;
     top: 0;
@@ -61,7 +78,7 @@
 
 #fondito-panaderia h3 {
     font-size: 7vh;
-    padding-top: 65vh;
+    padding-top: 50vh;
     font-weight:900;
     letter-spacing: 0.4rem;
     line-height: 10vh;
@@ -89,7 +106,7 @@
 
 #fondito-confiteria h3 {
     font-size: 7vh;
-    padding-top: 65vh;
+    padding-top: 50vh;
     font-weight:900;
     letter-spacing: 0.4rem;
     line-height: 10vh;
@@ -99,4 +116,15 @@
     font-size: 3.5vh;
     font-weight: 600;
     text-decoration: overline;
+}
+
+@media (min-width:728px) {
+
+    #fondito-panaderia h3 {
+        padding-top: 65vh;
+    }
+    /* --PESTAÑA CONFITERIA-- */
+    #fondito-confiteria h3 {
+        padding-top: 65vh;
+    }
 }
