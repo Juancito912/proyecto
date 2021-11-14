@@ -29,7 +29,7 @@
     opacity: 0.7;
 }
 /* --Secctions-- */
-.panaderia,.confiteria,.pasteleria {
+.secction{
     display: flex;
     flex-direction: column;
     height: auto;
@@ -38,7 +38,7 @@
 
 /* Tableta */
 @media (min-width:728px) {
-    .panaderia,.confiteria,.pasteleria {
+    .secction{
         height: 45vh;
         display: block;
     }
@@ -174,5 +174,3 @@
     display: flex;
     flex-flow: column;
 }
-
-

@@ -14,19 +14,20 @@
 .nosotros-titulo , .artesanales-titulo{
     padding: 1.5rem 1rem 1.5rem 1rem;
     height: auto;
-}
-
-.titulos-h3 {
-    letter-spacing: 0.2rem;
-    font-size: 1.5rem;
-    padding-bottom: 1vh;
-    font-weight: 600;
+    h3 {
+        letter-spacing: 0.2rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-bottom: 1vh;
+    }
 }
 
 .descripciones {
-    font-size: 1.25rem;
-    font-weight: 400;
-    font-style: normal;
+    font: {
+        size: 1.25rem;
+        weight: 400;
+        style: normal;
+    }
     text-align: left;
 }
 
@@ -45,7 +46,6 @@
         "separador separador"
         "personal personal"
         "footer footer";
-        grid-template-rows: 12vh 128vh auto;
     }
     .nosotros{
         grid-area: nosotros;
@@ -73,15 +73,13 @@
 .staff-titulos {
     height: 30vh;
     padding: 1rem;
-}
-
-.staff-titulos h3 {
-    font-size: 2rem;
-    padding: 1rem;
-}
-
-.staff-titulos p {
-    font-size: 1.2rem;
+        h3 {
+            font-size: 2rem;
+            padding: 1rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
 }
 
 .staff-fotos {
@@ -91,9 +89,7 @@
 
 @media (min-width:728px) {
     .staff {
-        background-color: rgb(24, 24, 24);
-        color: white;
-        grid-area: personal;
+        flex-direction: row;
     }
     .persona {
         width: 33.333333334%;

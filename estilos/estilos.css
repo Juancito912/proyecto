@@ -1,0 +1,623 @@
+@charset "UTF-8";
+/*-------HEADER------ */
+.header-container {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #6d0e16;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: header;
+}
+
+.header-titulo {
+  color: white;
+  width: 30%;
+  text-transform: none;
+}
+
+.header-titulo h1 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.header-titulo h2 {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.header-banner {
+  width: 70%;
+}
+
+.header-banner__encabezado {
+  margin: 0;
+}
+
+.header-banner__encabezado li {
+  display: block;
+  padding: 1rem;
+}
+
+.header-banner__encabezado a {
+  text-align: center;
+  color: white;
+  padding: 0.9rem;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.header-banner__encabezado a:hover {
+  color: #000000;
+  font-weight: 500;
+}
+
+/* Tableta */
+@media (min-width: 728px) {
+  .header-container {
+    height: 12vh;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header-banner__encabezado li {
+    display: inline-block;
+    padding: 1rem;
+  }
+}
+
+/* --FOOTER-- */
+.footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  clear: both;
+  font-size: 1.1rem;
+  margin-top: 0.2vh;
+  padding: 1vh 2rem 1vh 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  grid-area: footer;
+  background-color: #111;
+  color: white;
+}
+
+.footer-descripcion {
+  width: 100%;
+  margin-top: 1rem;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.footer-descripcion p {
+  padding-top: 2vh;
+  text-align: left;
+  font-size: 1rem;
+  width: 90%;
+}
+
+.footer-descripcion__foto {
+  width: 90%;
+  height: 25vh;
+}
+
+.footer-datos {
+  width: 100%;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.footer-datos__lista {
+  line-height: 9vh;
+  list-style: none;
+}
+
+.footer-enlaces {
+  font-size: 1.1rem;
+  width: 100%;
+  text-align: left;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.footer-enlaces__lista {
+  line-height: 6vh;
+  display: none;
+  width: 100%;
+}
+
+.footer-enlaces__redes li {
+  display: inline-block;
+  padding-right: 1.1rem;
+}
+
+/* Tableta */
+@media (min-width: 728px) {
+  .footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    clear: both;
+    font-size: 1.1rem;
+    margin-top: 0.2vh;
+    padding: 1vh 1rem 1vh 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    grid-area: footer;
+    background-color: #111;
+    color: white;
+  }
+  .footer-descripcion {
+    width: 35%;
+    margin-top: 1rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer-descripcion__foto {
+    width: 70%;
+    height: 21vh;
+  }
+  .footer-descripcion p {
+    padding-top: 2vh;
+    text-align: left;
+    font-size: 1rem;
+    width: 70%;
+  }
+  .footer-datos {
+    width: 35%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .footer-datos__lista {
+    line-height: 9vh;
+    list-style: none;
+  }
+  .footer-enlaces {
+    font-size: 1.1rem;
+    width: 20%;
+    text-align: left;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    margin-top: 1vh;
+  }
+  .footer-enlaces__lista {
+    line-height: 6vh;
+    display: inline-block;
+  }
+  .footer-enlaces__redes {
+    margin-top: 5vh;
+    display: inline-block;
+  }
+  .footer-enlaces__redes li {
+    display: inline-block;
+    padding-right: 1.1rem;
+  }
+}
+
+/* Container de la pestaña */
+.container-pestaña {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Clases generales de la pestaña */
+.imagen {
+  width: 100%;
+  height: 80vh;
+}
+
+.nosotros-titulo, .artesanales-titulo {
+  padding: 1.5rem 1rem 1.5rem 1rem;
+  height: auto;
+}
+
+.nosotros-titulo h3, .artesanales-titulo h3 {
+  letter-spacing: 0.2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-bottom: 1vh;
+}
+
+.descripciones {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-style: normal;
+  text-align: left;
+}
+
+.nosotros h2, .artesanales h2 {
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+}
+
+@media (min-width: 728px) {
+  .container-pestaña {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header header" "nosotros artesanales" "separador separador" "personal personal" "footer footer";
+  }
+  .nosotros {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: nosotros;
+  }
+  .artesanales {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: artesanales;
+  }
+}
+
+/* --STAFF-- */
+.staff {
+  background-color: #181818;
+  color: white;
+  grid-area: personal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.persona {
+  width: 100%;
+}
+
+.staff-titulos {
+  height: 30vh;
+  padding: 1rem;
+}
+
+.staff-titulos h3 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
+.staff-titulos p {
+  font-size: 1.2rem;
+}
+
+.staff-fotos {
+  width: 100%;
+  height: 60vh;
+}
+
+@media (min-width: 728px) {
+  .staff {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .persona {
+    width: 33.333333334%;
+  }
+}
+
+/* Clases-Generales Pestañas confiteria y panaderia */
+.grids-secction {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.foto-container {
+  position: relative;
+}
+
+.fotos-secctions {
+  display: block;
+  width: 100%;
+  height: 45vh;
+}
+
+@media (min-width: 728px) {
+  .grids-secction {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .fotos-secctions {
+    display: block;
+    width: 100%;
+    height: 45vh;
+  }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45vh;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  background-color: #0e181b75;
+}
+
+.foto-container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 1.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* FONDOS */
+#fondito-panaderia, #fondito-confiteria {
+  background-image: url("../img/fondo_panaderia.jpg");
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 88vh;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+#fondito-panaderia h3, #fondito-confiteria h3 {
+  font-size: 7vh;
+  padding-top: 50vh;
+  font-weight: 900;
+  letter-spacing: 0.4rem;
+  line-height: 10vh;
+}
+
+#fondito-panaderia p, #fondito-confiteria p {
+  font-size: 3.5vh;
+  font-weight: 600;
+  text-decoration: overline;
+}
+
+#fondito-confiteria {
+  background-image: url("../img/fondo-confiteria.jpeg");
+}
+
+@media (min-width: 728px) {
+  #fondito-panaderia h3, #fondito-confiteria h3 {
+    padding-top: 65vh;
+  }
+  /* --PESTAÑA CONFITERIA-- */
+  #fondito-confiteria h3 {
+    padding-top: 65vh;
+  }
+}
+
+/* Container de la pagina */
+.flex-container--contacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/* Formulario */
+.consultas {
+  color: black;
+  background-color: white;
+  font-size: 2rem;
+  padding: 2rem;
+  background-color: #bbbdcf;
+}
+
+.consultas-form__titulo {
+  margin-bottom: 3vh;
+}
+
+.consultas-form__titulo h2 {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.6rem;
+  font-size: 3rem;
+  padding-bottom: 2vh;
+}
+
+.consultas-form__titulo p {
+  font-family: 'Ephesis', cursive;
+  font-weight: 500;
+  color: #990e31;
+  font-size: 2.5rem;
+  line-height: 4vh;
+}
+
+.consultas-form {
+  border: none;
+  font-size: 1.5rem;
+}
+
+.consultas-form__cuerpo {
+  line-height: 4vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consultas-form__cuerpo--div {
+  font-size: 1.6rem;
+  margin: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.consultas-form__cuerpo--div label {
+  padding-right: 1rem;
+  font-size: 1.5rem;
+}
+
+.consultas-form__cuerpo--input, textarea {
+  padding: 0.5rem;
+  color: #535050;
+  font-size: 1rem;
+  border: none;
+  width: 60%;
+  margin-bottom: 1vh;
+}
+
+.boton {
+  font-size: 2rem;
+  width: 10rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* --CLASS_GENERICAS-- */
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.centrado {
+  text-align: center;
+}
+
+.derecha {
+  float: right;
+}
+
+.izquierda {
+  float: left;
+}
+
+.fondo-naranja {
+  background-color: #e9722c;
+}
+
+.icon {
+  font-size: 1.8rem;
+}
+
+.icon-reorder {
+  color: gray;
+}
+
+.violeta {
+  color: #833AB4;
+}
+
+.azul {
+  color: #4267B2;
+}
+
+.verde {
+  color: #25D366;
+}
+
+.bordo {
+  color: #990e31;
+}
+
+.cursiva {
+  font-family: 'Ephesis', cursive;
+}
+
+.mayuscula {
+  text-transform: uppercase;
+}
+
+#pestaña-activa {
+  color: black;
+  font-weight: bold;
+}
+
+/* --SEPARADOR-- */
+.separador {
+  margin-top: 1vh;
+  padding: 2vh;
+  margin-bottom: 2.3vh;
+  grid-area: separador;
+}
+
+.separador h3 {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+}
+
+.separador p {
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,97 @@
+@import "_header.scss";
+@import "_footer.scss";
+@import "_sobre_nos.scss";
+// @import "_index.scss";
+@import "_pan_con.scss";
+@import "_contacto.scss"; 
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* --CLASS_GENERICAS-- */
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.derecha {
+    float: right;
+}
+
+.izquierda {
+    float: left;
+}
+
+.fondo-naranja {
+    background-color: rgb(233, 114, 44);
+}
+.icon{
+    font-size: 1.8rem;
+}
+
+.icon-reorder{
+    color: gray;
+}
+.violeta {
+    color: #833AB4;
+}
+
+.azul {
+    color: #4267B2;
+}
+.verde {
+    color: #25D366;
+}
+
+.bordo {
+    color:#990e31;
+}
+.cursiva {
+    font-family: 'Ephesis', cursive;
+}
+
+.mayuscula {
+    text-transform: uppercase;
+}
+
+#pestaña-activa {
+    color: black;
+    font-weight: bold;
+}
+
+/* --SEPARADOR-- */
+.separador {
+    margin-top: 1vh;
+    padding: 2vh;
+    margin-bottom: 2.3vh;
+    grid-area: separador;
+
+        h3 {
+            font-size: 3rem;
+            font-weight: 500;
+            letter-spacing: 0.4rem;
+        }
+
+        p {
+            font-size: 2.3rem;
+            font-weight:500;
+        }
+}

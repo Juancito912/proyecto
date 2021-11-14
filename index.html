@@ -4,16 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="Kelly's Cake ofrece gran variedad de productos relacionados con la confiteria y panaderia. Todo nustros productos son artesanales y de gran calidad.">
     <title> Kelly's Cake </title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
-    <link rel="stylesheet" href="./estilos/clases_generales.css">
+    <link rel="stylesheet" href="./estilos/estilos.css">
     <link rel="stylesheet" href="./estilos/index.css">
-    <!-- Scrips de bootstrap con java-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
@@ -62,49 +58,32 @@
     <div class="body-flex">
 
         <!-- Inicio de secciones -->
-        <section class="panaderia centrado">
+        <section class="secction centrado">
             <div class="titulo-secction fondo-naranja">
-                <h2 class="titulo-h2 bordo"> Panaderia</h2>
+                <h2 class="titulos-h2 bordo"> Panaderia</h2>
                 <p class="texto-p"> Panes de todo tipo de harinas mezcladas con semillas y otros ingredientes.</p>
             </div>
 
             <img id="foto" class="derecha" src="img/panes.jpg" alt="Panaderia">
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img01">
-                <div id="caption"></div>
-            </div>
         </section>
 
-        <section class="confiteria centrado">
+        <section class="secction centrado">
             <div class="titulo-secction">
-                <h2 class="titulo-h2 bordo"> Confiteria</h2>
+                <h2 class="titulos-h2 bordo"> Confiteria</h2>
                 <p class="texto-p"> Gran variedad de facturas y bombones</p>
             </div>
 
             <img id="foto" class="izquierda" src="img/facturas.jpg" alt="Facturas">
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img02">
-                <div id="caption"></div>
-            </div>
         </section>
 
-        <section class="pasteleria centrado">
+        <section class="secction centrado">
             <div class="titulo-secction fondo-naranja">
-                <h2 class="titulo-h2 bordo"> Pasteleria</h2>
+                <h2 class="titulos-h2 bordo"> Pasteleria</h2>
                 <p class="texto-p"> Postres, tortas, masas finas, budines y mini-postres</p>
             </div>
             
             <img id="foto" class="derecha" src="img/pastelería2.jpg" alt="Pasteleria">
-            <!-- The Modal -->
-            <div id="myModal" class="modal">
-                <span class="close">&times;</span>
-                <img class="modal-content" id="img03">
-                <div id="caption"></div>
-            </div>
+            
         </section>
     </div>
 
@@ -161,29 +140,15 @@
             </ul>
         </div>
     </footer>
+
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        // Get the modal
-        var modal = document.getElementById("myModal");
-        
-        // Get the image and insert it inside the modal - use its "alt" text as a caption
-        var img = document.getElementById("foto");
-        var modalImg = document.getElementById("img01");
-        var captionText = document.getElementById("caption");
-        img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() { 
-          modal.style.display = "none";
-        }
+    <!-- Scrips de bootstrap con java-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </script>
 </body>
 
