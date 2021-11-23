@@ -61,7 +61,6 @@
   font-weight: 500;
 }
 
-/* Tableta */
 @media (min-width: 728px) {
   .header-container {
     height: 12vh;
@@ -330,6 +329,108 @@
   }
   .persona {
     width: 33.333333334%;
+  }
+}
+
+/* Cuerpo del index */
+.body-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+.secction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+  width: 100%;
+}
+
+.titulo-secction {
+  width: 100%;
+  display: inline-block;
+  padding: 2rem;
+  height: 100%;
+  padding-top: 14vh;
+}
+
+.titulo-secction h2 {
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+
+.titulo-secction p {
+  font-size: 1.5rem;
+  font-style: normal;
+}
+
+#foto {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#foto:hover {
+  opacity: 0.7;
+}
+
+#fondito {
+  width: 100%;
+  height: 88vh;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../img/fondito5.jpg");
+  background-color: tomato;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fondito h3 {
+  padding-top: 70vh;
+  font-size: 6vh;
+  font-weight: 700;
+}
+
+#fondito p {
+  font-size: 5vh;
+  text-decoration: overline;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .secction {
+    height: 45vh;
+    display: block;
+  }
+  .titulo-secction {
+    width: 50%;
+    display: inline-block;
+    padding: 2rem;
+    height: 100%;
+    padding-top: 14vh;
+  }
+  .titulo-secction h2 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+  }
+  #foto {
+    width: 50%;
+    height: 100%;
   }
 }
 
