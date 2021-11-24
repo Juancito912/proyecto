@@ -359,7 +359,7 @@
 }
 
 .titulo-secction h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   letter-spacing: 0.2rem;
   line-height: 3.5rem;
   font-weight: 700;
@@ -368,6 +368,7 @@
 .titulo-secction p {
   font-size: 1.5rem;
   font-style: normal;
+  color: #524c4c;
 }
 
 #foto {
