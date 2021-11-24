@@ -6,7 +6,6 @@
 .secction {
     display: flex;
     flex-direction: column;
-    height: auto;
     width: 100%;    
 }
 
@@ -15,9 +14,8 @@
     display: inline-block;
     padding: 2rem;
     height: 100%;
-    padding-top: 14vh;
         h2{
-            font-size: 2rem;
+            font-size: 3rem;
             letter-spacing: 0.2rem;
             line-height: 3.5rem;
             font-weight: 700;
@@ -63,18 +61,18 @@
 
 @media (min-width:768px) {
     .secction {
-        height: 45vh;
+        height: 40vh;
         display:block;
     }
-  
+
     .titulo-secction{
         width: 50%;
         display: inline-block;
-        padding: 2rem;
+        padding: 5.5rem;
         height: 100%;
-        padding-top: 14vh;
             h2 {
-                font-size: 2rem;
+                padding-top: 3vh;
+                font-size: 3rem;
                 letter-spacing: 0.2rem;
                 line-height: 3.5rem;
                 font-weight: 700;
@@ -84,4 +82,4 @@
         width: 50%;
         height: 100%;
     }
-  }
+}

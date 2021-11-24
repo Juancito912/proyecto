@@ -62,24 +62,21 @@
 }
 
 /* Tableta */
-@media (min-width: 728px) {
+@media (min-width: 768px) {
     .footer{
         width: 100%;
         display: flex;
         flex-direction: row;
-        clear: both;
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         margin-top: 0.2vh;
         padding: 1vh 1rem 1vh 1rem;
         font-family: 'Times New Roman', Times, serif;
         justify-content:space-evenly;
-        grid-area: footer;
-        background-color: #111;
         color: white;
     }
     
     .footer-descripcion {
-        width: 35%;
+        width: 40%;
         margin-top: 1rem;
         order:1;
     }
@@ -92,7 +89,7 @@
     .footer-descripcion p{
         padding-top: 2vh;
         text-align: left;
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 70%;
     }
     
@@ -102,7 +99,7 @@
     }
     
     .footer-datos__lista {
-        line-height: 9vh;
+        line-height: 8vh;
         list-style:none;
     }
     

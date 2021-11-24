@@ -151,7 +151,7 @@
 }
 
 /* Tableta */
-@media (min-width: 728px) {
+@media (min-width: 768px) {
   .footer {
     width: 100%;
     display: -webkit-box;
@@ -161,20 +161,17 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    clear: both;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     margin-top: 0.2vh;
     padding: 1vh 1rem 1vh 1rem;
     font-family: 'Times New Roman', Times, serif;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    grid-area: footer;
-    background-color: #111;
     color: white;
   }
   .footer-descripcion {
-    width: 35%;
+    width: 40%;
     margin-top: 1rem;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -187,7 +184,7 @@
   .footer-descripcion p {
     padding-top: 2vh;
     text-align: left;
-    font-size: 1rem;
+    font-size: 1.1rem;
     width: 70%;
   }
   .footer-datos {
@@ -197,7 +194,7 @@
             order: 2;
   }
   .footer-datos__lista {
-    line-height: 9vh;
+    line-height: 8vh;
     list-style: none;
   }
   .footer-enlaces {
@@ -351,7 +348,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: auto;
   width: 100%;
 }
 
@@ -360,11 +356,10 @@
   display: inline-block;
   padding: 2rem;
   height: 100%;
-  padding-top: 14vh;
 }
 
 .titulo-secction h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 0.2rem;
   line-height: 3.5rem;
   font-weight: 700;
@@ -412,18 +407,18 @@
 
 @media (min-width: 768px) {
   .secction {
-    height: 45vh;
+    height: 40vh;
     display: block;
   }
   .titulo-secction {
     width: 50%;
     display: inline-block;
-    padding: 2rem;
+    padding: 5.5rem;
     height: 100%;
-    padding-top: 14vh;
   }
   .titulo-secction h2 {
-    font-size: 2rem;
+    padding-top: 3vh;
+    font-size: 3rem;
     letter-spacing: 0.2rem;
     line-height: 3.5rem;
     font-weight: 700;
@@ -707,7 +702,7 @@ a:hover {
 .separador {
   margin-top: 1vh;
   padding: 2vh;
-  margin-bottom: 2.3vh;
+  margin-bottom: 1.5vh;
   grid-area: separador;
 }
 
