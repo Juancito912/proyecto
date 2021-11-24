@@ -147,7 +147,7 @@
 
 .footer-enlaces__redes li {
   display: inline-block;
-  padding-right: 1.1rem;
+  padding-right: 1rem;
 }
 
 /* Tableta */
@@ -211,7 +211,7 @@
     display: inline-block;
   }
   .footer-enlaces__redes {
-    margin-top: 5vh;
+    margin-top: 4vh;
     display: inline-block;
   }
   .footer-enlaces__redes li {
