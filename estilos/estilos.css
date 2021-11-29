@@ -9,10 +9,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -61,7 +61,17 @@
   font-weight: 500;
 }
 
-@media (min-width: 728px) {
+.boton-header {
+  background-color: #6d0e16;
+  border: none;
+}
+
+.boton-header:hover {
+  background-color: #6d0e16;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
   .header-container {
     height: 12vh;
     -webkit-box-orient: horizontal;
@@ -72,6 +82,9 @@
   .header-banner__encabezado li {
     display: inline-block;
     padding: 1rem;
+  }
+  .boton-header {
+    display: none;
   }
 }
 
@@ -163,7 +176,7 @@
             flex-direction: row;
     font-size: 1.2rem;
     margin-top: 0.2vh;
-    padding: 1vh 1rem 1vh 1rem;
+    padding: 1vh 1rem 0vh 1rem;
     font-family: 'Times New Roman', Times, serif;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
