@@ -85,13 +85,25 @@ a:hover {
     grid-area: separador;
 
         h3 {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 500;
             letter-spacing: 0.4rem;
         }
 
         p {
-            font-size: 2.3rem;
+            font-size: 1.3rem;
             font-weight:500;
         }
+}
+
+// Tableta
+@media (min-width:768px){
+    .separador {
+        h3{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2.3rem;
+        }
+    }
 }
