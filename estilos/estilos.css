@@ -223,7 +223,7 @@
             order: 3;
     margin-top: 1vh;
   }
-  .footer-enlaces ul {
+  .footer-enlaces .footer-enlaces__encabezado {
     line-height: 6vh;
     display: inline-block;
   }
