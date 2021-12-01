@@ -4,14 +4,14 @@
     height: max-content;
     background-color:#6d0e16;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     grid-area: header;
 }
 
 .header-titulo{
     color: white;
-    width: 30%;
+    width: 100%;
     text-transform: none;
         h1 {
             font-size: 1.6rem;
@@ -23,11 +23,12 @@
         }
 }   
 
-.header-banner{
-    width: 70%;
-}
+// .header-banner{
+//     width: 70%;
+// }
 
 .header-banner__encabezado {
+    background-color: #6d0e16;
     margin: 0;
         li {
             display: block;
@@ -49,6 +50,7 @@
 .boton-header {
     background-color: #6d0e16;
     border: none;
+    text-align: center;
 }
 .boton-header:hover{
     background-color: #6d0e16;
