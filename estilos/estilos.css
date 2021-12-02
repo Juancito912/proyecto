@@ -21,23 +21,30 @@
   font-size: 1.5rem;
 }
 
-@media (min-width: 768px) {
-  .navbar-brand {
-    text-align: center;
-  }
-}
-
 .navbar-nav {
   padding-left: 1rem;
 }
 
-.nav-link {
+.nav-link, .dropdown-item {
   font-size: 1.2rem;
   font-weight: 500;
   text-transform: uppercase;
   text-align: left;
   color: white;
   padding: 0.5rem;
+  border: none;
+}
+
+.dropdown-menu {
+  background-color: #6d0e16;
+}
+
+.btn-productos {
+  background-color: #6d0e16;
+  font-size: 1.2rem;
+  border: none;
+  text-transform: uppercase;
+  color: white;
 }
 
 .navbar-toggler {
@@ -46,6 +53,46 @@
 
 .nav-link:hover {
   color: black;
+}
+
+.dropdown-toggle {
+  display: none;
+}
+
+.dropdown-item {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    text-align: center;
+  }
+  .dropdown-toggle {
+    display: block;
+  }
+  .dropdown-item {
+    display: block;
+  }
+  .con, .pan {
+    display: none;
+  }
+  .navbar-nav {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .con, .pan {
+    display: block;
+  }
+  .dropdown-toggle {
+    display: none;
+  }
+  .dropdown-item {
+    display: none;
+  }
 }
 
 /* --FOOTER-- */
@@ -393,14 +440,14 @@
   .titulo-secction {
     width: 50%;
     display: inline-block;
-    padding: 5.5rem;
+    padding-top: 3rem;
     height: 100%;
   }
   .titulo-secction h2 {
-    font-size: 3rem;
-    letter-spacing: 0.2rem;
-    line-height: 3.5rem;
-    font-weight: 700;
+    font-size: 2.5rem;
+  }
+  .titulo-secction p {
+    font-size: 1.7rem;
   }
   .foto {
     width: 50%;
