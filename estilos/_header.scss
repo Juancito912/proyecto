@@ -4,11 +4,17 @@
 }
 .navbar-brand{
     padding-left: 1rem;
+    text-align: left;
     h1{
         font-size: 2rem;
     }
     h2{
         font-size: 1.5rem;
+    }
+}
+@media (min-width:768px) {
+    .navbar-brand{
+        text-align: center;
     }
 }
 
