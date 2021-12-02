@@ -25,24 +25,41 @@
 <body class="flex-container--contacto">
     <!-- Header -->
     <header>
-        <div  class="header-container">
-            <!-- Nombre de la empresa -->
-            <div class="header-titulo centrado">
-                <h1> Kelly's Cake </h1>
-                <h2> Confiteria y Panaderia</h2>
-            </div>
+        <nav class="navbar navbar-expand-md mi_nav">
+            <div class="container-fluid">
+                <!-- Nombre de la empresa -->
+                <a class="navbar-brand centrado" href="index.html"> 
+                    <div class="header-titulo">
+                        <h1> Kelly's Cake </h1>
+                        <h2> Confiteria y Panaderia</h2>
+                    </div>
+                </a>
 
-            <!-- Barra de navegacion -->
-            <nav class="header-banner">
-                <ul class="header-banner__encabezado centrado">
-                    <li><a href="index.html">Home </a></li>
-                    <li><a href="staff.html"> Sobre Nosotros </a></li>
-                    <li><a href="confiteria.html"> Confiteria </a></li>
-                    <li><a href="panaderia.html"> Panaderia </a></li>
-                    <li><a href="contacto.html" id="pestaña-activa"> Contacto </a></li>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-close="true" data data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" id="pestaña-activa" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="staff.html">Sobre Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="confiteria.html">Confiteria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="panaderia.html">Panaderia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
                 </ul>
-            </nav>
-        </div>
+                </div>
+            </div>
+        </nav>
     </header>
     
     <!-- Formulario -->

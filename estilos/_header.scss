@@ -4,6 +4,12 @@
 }
 .navbar-brand{
     padding-left: 1rem;
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.5rem;
+    }
 }
 
 .navbar-nav{
@@ -18,7 +24,6 @@
     text-align: left;
     color: white;
     padding: 0.5rem;
-    
 }
 .navbar-toggler{
     color: white;
