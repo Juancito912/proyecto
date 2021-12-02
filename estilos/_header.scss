@@ -1,85 +1,28 @@
 /*-------HEADER------ */
-.header-container{
-    width: 100%;
-    height: max-content;
-    background-color:#6d0e16;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    grid-area: header;
-}
-
-.header-titulo{
-    color: white;
-    width: 90%;
-    text-transform: none;
-    padding-top: 1.5vh;
-    order: 2;
-        h1 {
-            font-size: 1.6rem;
-            font-weight: 300;
-        }
-        h2 {
-            font-size: 1.3rem;
-            font-weight: 300;
-        }
-}   
-
-// .header-banner{
-//     width: 70%;
-// }
-
-.header-banner__encabezado {
+.navbar{
     background-color: #6d0e16;
-    margin: 0;
-        li {
-            display: block;
-            padding: 1rem;
-        }
-        a {
-            text-align: center;
-            color:rgb(255, 255, 255);
-            padding: 0.9rem;
-            text-transform: uppercase;
-            font-size: 1.1rem;
-        }
-        a:hover {
-            color: #000000;
-            font-weight: 500;
-        }
 }
-
-.boton-header {
-    background-color: #6d0e16;
-    border: none;
-    text-align: center;
-    display: block;
-    color: white;
+.navbar-brand{
     padding-left: 1rem;
-    padding-top: 5vh;
 }
-.boton-header:hover{
-    background-color: #6d0e16;
-    cursor: pointer;
+
+.navbar-nav{
+    margin-right: 3rem;
+    padding-left: 1rem;
 }
-// Tableta
-@media (min-width:768px){
-    .header-container {
-        height: 12vh;
-        flex-direction: row;
-        order: 1;
-    }
-    .header-titulo{
-        width: 30%;
-    }
-    .header-banner{
-        width: 70%;
-    }
-    .header-banner__encabezado li {
-        display: inline-block;
-        padding: 1rem;
-    }
-    .boton-header{
-        display: none;
-    }
-}   
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    padding: 0.5rem;
+    
+}
+.navbar-toggler{
+    color: white;
+}
+.nav-link:hover{
+    color: black;
+}
