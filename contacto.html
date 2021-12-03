@@ -47,12 +47,21 @@
                     <li class="nav-item">
                         <a class="nav-link" href="staff.html">Sobre Nosotros</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item con">
                         <a class="nav-link" href="confiteria.html">Confiteria</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item pan">
                         <a class="nav-link" href="panaderia.html">Panaderia</a>
                     </li>
+                    <div class="btn-group">
+                        <button class="btn-productos dropdown-toggle" type="button" id="defaultDropdown" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">
+                            Productos
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="defaultDropdown">
+                            <li><a class="dropdown-item" href="#">Confiteria</a></li>
+                            <li><a class="dropdown-item" href="#">Panaderia </a></li>
+                        </ul>
+                    </div>
                     <li class="nav-item">
                         <a class="nav-link" id="pestaña-activa" href="contacto.html">Contacto</a>
                     </li>
@@ -89,7 +98,7 @@
                 <textarea name="mensaje" id="mensaje" cols="30" rows="5" maxlength="300" placeholder="Comentarios"></textarea>
                     
                 <div class="newsletter consultas-form__cuerpo--div">
-                    <label  for="newsletter"> ¿Desea recibir el Newsletter?</label>
+                    <label for="newsletter"> ¿Desea recibir el Newsletter?</label>
                     <label for="siNewsletter"> Si</label>
                     <input type="radio" id="siNewsletter" name="newsletter" value="1" checked>
                     <label for="noNewsletter"> No</label>
