@@ -29,6 +29,9 @@
     padding: 0.5rem;
     border:none;
 }
+.dropdown-item:hover {
+    background-color: #6d0e16;
+}
 .dropdown-menu {
     background-color:#6d0e16;
 }
@@ -55,7 +58,7 @@
     }
     .dropdown-toggle,.dropdown-item {
         display: block;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
     .con, .pan {
         display: none;

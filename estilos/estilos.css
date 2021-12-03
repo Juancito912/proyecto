@@ -35,6 +35,10 @@
   border: none;
 }
 
+.dropdown-item:hover {
+  background-color: #6d0e16;
+}
+
 .dropdown-menu {
   background-color: #6d0e16;
 }
@@ -55,11 +59,7 @@
   color: black;
 }
 
-.dropdown-toggle {
-  display: none;
-}
-
-.dropdown-item {
+.dropdown-toggle, .dropdown-item {
   display: none;
 }
 
@@ -67,11 +67,9 @@
   .navbar-brand {
     text-align: center;
   }
-  .dropdown-toggle {
+  .dropdown-toggle, .dropdown-item {
     display: block;
-  }
-  .dropdown-item {
-    display: block;
+    font-size: 1.25rem;
   }
   .con, .pan {
     display: none;
@@ -87,10 +85,7 @@
   .con, .pan {
     display: block;
   }
-  .dropdown-toggle {
-    display: none;
-  }
-  .dropdown-item {
+  .dropdown-toggle, .dropdown-item {
     display: none;
   }
 }
@@ -258,11 +253,11 @@
 /* Clases generales de la pestaña */
 .imagen {
   width: 100%;
-  height: 80vh;
+  height: 60vh;
 }
 
 .nosotros-titulo, .artesanales-titulo {
-  padding: 1.5rem 1rem 1.5rem 1rem;
+  padding: 1.5rem 1rem 0.5rem 1rem;
   height: auto;
 }
 
@@ -273,20 +268,50 @@
   padding-bottom: 1vh;
 }
 
-.descripciones {
+.nosotros-titulo h2, .artesanales-titulo h2 {
+  font-weight: 600;
+  letter-spacing: 0.3rem;
+  font-size: 2rem;
+}
+
+.nosotros-titulo p, .artesanales-titulo p {
   font-size: 1.25rem;
   font-weight: 400;
   font-style: normal;
   text-align: left;
 }
 
-.nosotros h2, .artesanales h2 {
-  font-weight: 600;
-  letter-spacing: 0.3rem;
-  font-size: 2rem;
+@media (min-width: 768px) {
+  .container-pestaña {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .artesanales-titulo, .nosotros-titulo {
+    width: 50%;
+    display: inline-block;
+    height: auto;
+  }
+  .artesanales-titulo h2, .nosotros-titulo h2 {
+    font-size: 1.4rem;
+  }
+  .artesanales-titulo h3, .nosotros-titulo h3 {
+    font-size: 1.5rem;
+  }
+  .artesanales-titulo p, .nosotros-titulo p {
+    font-size: 1.2rem;
+  }
+  .imagen {
+    width: 50%;
+    height: 50vh;
+  }
 }
 
-@media (min-width: 728px) {
+@media (min-width: 1024px) {
   .container-pestaña {
     display: -ms-grid;
     display: grid;
@@ -301,6 +326,23 @@
     -ms-grid-row: 2;
     -ms-grid-column: 2;
     grid-area: artesanales;
+  }
+  .artesanales-titulo, .nosotros-titulo {
+    width: 100%;
+    height: 40vh;
+  }
+  .artesanales-titulo h2, .nosotros-titulo h2 {
+    font-size: 1.8rem;
+  }
+  .artesanales-titulo h3, .nosotros-titulo h3 {
+    font-size: 1.5rem;
+  }
+  .artesanales-titulo p, .nosotros-titulo p {
+    font-size: 1.25rem;
+  }
+  .imagen {
+    width: 100%;
+    height: 80vh;
   }
 }
 
@@ -323,7 +365,7 @@
 }
 
 .staff-titulos {
-  height: 30vh;
+  height: auto;
   padding: 1rem;
 }
 
@@ -339,9 +381,11 @@
 .staff-fotos {
   width: 100%;
   height: 60vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media (min-width: 728px) {
+@media (min-width: 768px) {
   .staff {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

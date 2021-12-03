@@ -8,11 +8,11 @@
 
 .imagen {
     width: 100%;
-    height: 80vh;
+    height: 60vh;
 }
 
 .nosotros-titulo , .artesanales-titulo{
-    padding: 1.5rem 1rem 1.5rem 1rem;
+    padding: 1.5rem 1rem 0.5rem 1rem;
     height: auto;
     h3 {
         letter-spacing: 0.2rem;
@@ -20,24 +20,46 @@
         font-weight: 600;
         padding-bottom: 1vh;
     }
-}
-
-.descripciones {
-    font: {
-        size: 1.25rem;
-        weight: 400;
-        style: normal;
+    h2 {
+        font-weight: 600;
+        letter-spacing: 0.3rem;
+        font-size: 2rem;
     }
-    text-align: left;
+    p{
+        font: {
+            size: 1.25rem;
+            weight: 400;
+            style: normal;
+        }
+        text-align: left;
+    }
 }
 
-.nosotros h2, .artesanales h2 {
-    font-weight: 600;
-    letter-spacing: 0.3rem;
-    font-size: 2rem;
+@media (min-width:768px) {
+    .container-pestaña {
+        display: flex;
+        flex-direction: column;
+    }
+    .artesanales-titulo,.nosotros-titulo {
+        width: 50%;
+        display:inline-block;
+        height: auto;
+        h2 {
+            font-size: 1.4rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+    }
+    .imagen {
+        width: 50%;
+        height: 50vh;
+    }
 }
-
-@media (min-width:728px) {
+@media (min-width:1024px) {
     .container-pestaña {
         display: grid;
         grid-template-areas: 
@@ -45,7 +67,8 @@
         "nosotros artesanales"
         "separador separador"
         "personal personal"
-        "footer footer";
+        "footer footer"
+        ;
     }
     .nosotros{
         grid-area: nosotros;
@@ -54,6 +77,25 @@
     .artesanales {
         grid-area: artesanales;
     }
+    .artesanales-titulo,.nosotros-titulo {
+        width: 100%;
+        height: 40vh;
+        h2 {
+            font-size: 1.8rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        p{
+            font-size: 1.25rem;
+        }
+    }
+    .imagen {
+        // float: none;
+        width: 100%;
+        height: 80vh;
+    }
+    
 }
 
 /* --STAFF-- */
@@ -71,7 +113,7 @@
 }
 
 .staff-titulos {
-    height: 30vh;
+    height: auto;
     padding: 1rem;
         h4 {
             font-size: 2rem;
@@ -85,14 +127,14 @@
 .staff-fotos {
     width: 100%;
     height: 60vh;
+    object-fit: cover;
 }
 
-@media (min-width:728px) {
+@media (min-width:768px) {
     .staff {
         flex-direction: row;
     }
     .persona {
         width: 33.333333334%;
     }
-    
 }
