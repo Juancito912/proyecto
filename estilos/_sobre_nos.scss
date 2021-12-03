@@ -91,7 +91,6 @@
         }
     }
     .imagen {
-        // float: none;
         width: 100%;
         height: 80vh;
     }
@@ -101,8 +100,8 @@
 /* --STAFF-- */
 
 .staff {
-    background-color: rgb(24, 24, 24);
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: black;
     grid-area: personal;
     display: flex;
     flex-direction: column;
@@ -114,13 +113,15 @@
 
 .staff-titulos {
     height: auto;
-    padding: 1rem;
+    padding: 0rem 1rem 1rem 1rem;
         h4 {
-            font-size: 2rem;
-            padding: 1rem;
+            font-size: 1.7rem;
+            padding-top: 1rem;
         }
         p{
             font-size: 1.2rem;
+            color: rgb(82, 76, 76);
+            text-align: left;
         }
 }
 
@@ -134,6 +135,7 @@
     .staff {
         flex-direction: row;
     }
+
     .persona {
         width: 33.333333334%;
     }

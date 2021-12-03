@@ -348,8 +348,8 @@
 
 /* --STAFF-- */
 .staff {
-  background-color: #181818;
-  color: white;
+  background-color: white;
+  color: black;
   grid-area: personal;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -366,16 +366,18 @@
 
 .staff-titulos {
   height: auto;
-  padding: 1rem;
+  padding: 0rem 1rem 1rem 1rem;
 }
 
 .staff-titulos h4 {
-  font-size: 2rem;
-  padding: 1rem;
+  font-size: 1.7rem;
+  padding-top: 1rem;
 }
 
 .staff-titulos p {
   font-size: 1.2rem;
+  color: #524c4c;
+  text-align: left;
 }
 
 .staff-fotos {
