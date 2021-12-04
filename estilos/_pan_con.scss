@@ -16,7 +16,7 @@
     object-fit: cover;
 }
 
-@media (min-width:728px) {
+@media (min-width:768px) {
     .grids-secction {
         width: 100%;
         display: grid;
@@ -90,12 +90,8 @@
     @extend #fondito-panaderia;
     background-image: url("../img/fondo-confiteria.jpeg");
 }
-
-#fondito-confiteria:hover {
+#fondito-panaderia:hover {
     opacity: 0.7;
-    transition: .5s ease;
-    background-color: #0e181b75;
-    color: black;
 }
 @media (min-width:768px) {
 
